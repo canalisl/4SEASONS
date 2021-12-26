@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  {{ movie.title }}
+  <hr>
+  {% for review in reviews %}
+    {{ review.title }}
+    {{ review.content }}
+  {% endfor %}
+
+{% endblock content %}
